@@ -1,0 +1,48 @@
+# Nmap X.XX scan initiated Mon Aug XX XX:XX:XX XXXX as: nmap -sU -TX -iL student_ips.txt -Pn -p- -oG student_scans_udp.txt -oX student_scans_udp.xml
+Host: XXX.XXX.XX.X ()   Status: Up
+Host: XXX.XXX.XX.X ()   Ports: XX/open/udp//domain///, XXX/open/udp//ntp///     Ignored State: open|filtered (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///   Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//data-insurance///, XXXX/open|filtered/udp//scpi-raw///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///        Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//apdap///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp///// Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////  Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//scpi-raw///, XXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////        Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////   Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//apdap///, XXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////      Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//apdap///, XXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////    Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp/////     Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//dtp-net///, XXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown/// Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//scpi-raw///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////     Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXX/open|filtered/udp//netwatcher-mon///, XXXX/open|filtered/udp//scpi-raw///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////        Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////   Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp//unknown///, XXXXX/open|filtered/udp/////       Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX () Status: Up
+Host: XXX.XXX.XX.XXX () Ports: XXX/open|filtered/udp//ipp///, XXXX/open|filtered/udp//netwatcher-mon///, XXXX/open|filtered/udp//apdap///, XXXX/open|filtered/udp//zeroconf///, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////, XXXXX/open|filtered/udp/////  Ignored State: closed (XXXXX)
+Host: XXX.XXX.XX.XXX (xxxXXX)   Status: Up
+Host: XXX.XXX.XX.XXX (xxxXXX)   Status: Up
+# Nmap done at Tue Aug XX XX:XX:XX XXXX -- XX IP addresses (XX hosts up) scanned in XXXXX.XX seconds
