@@ -12,10 +12,10 @@ main() {
     file="$1"
 
     while read -r line ; do
-
+        
         # check to see if the line contains port information
         has_ports "$line"
-
+        
         # if the line contains port information
         if [ "$?" == 1 ] ; then
             # print informtion for each port on a separate line
@@ -45,7 +45,7 @@ assert_args() {
     args_present="$2"
 
     if [ "$args_present" -lt "$args_needed" ] ; then
-
+        
         # if a custom error message was provided
         if [ "$#" -ge 3 ] ; then
             custom_error_message="$3"
@@ -72,11 +72,11 @@ has_word() {
 
     line="$1"
     word="$2"
-
+    
     # if a blank line is returned, the word was not in the line
     # otherwise, the line contains the word
     result="$(echo "$line" | sed -n "/$word/p")"
-
+    
     if [ -z "$result" ] ; then
         return 0
     else
@@ -110,27 +110,39 @@ pprint_ports() {
     assert_args 1 "$#"
     line="$1"
 
-    port_info="$(echo "$line" | sed -E 's/.*Ports:(.*)/\1/g')"
+    # convert multiple '/' into a single '/'
+    line="$(echo "$line" | sed -E 's|/+|/|g')"
+    
+    # remove everything after the last '/'
+    # this works because of greedy matching
+    # this remove extra information such as the number of closed ports
+    line="$(echo "$line" | sed -E 's|^(.*/).*$|\1|g')"
 
+    port_info="$(echo "$line" | sed -E 's/.*Ports:(.*)/\1/g')"
+    
     # store the info for each port in a separate line
-    ports=$(echo "$port_info" | awk 'BEGIN{FS=","} { for(i=1;i<NF;i++) { print($i) } }')
+    ports=$(echo "$port_info" | awk 'BEGIN{FS=","} { for(i=1;i<=NF;i++) { print($i) } }')
 
     # format and print the info for each port
+    # Why IFS?
+    # Without IFS, lines are tokenized at whitespace
+    # bash removes the newline character, but we want to keep it for tokenizaiton purposes
+    # we can keep by by adding the '$' 
+     
+    IFS=$'\n'
     for line in $ports; do
-
-        # convert multiple '/' into a single '/'
-        line="$(echo "$line" | sed -E 's|/+|/|g')"
+        
         # remove the trailing '/'
         line="${line:0:${#line}-1}"
 
         # extract the port number
         port_num="$(echo "$line" | awk 'BEGIN{FS="/"} {print($1)}')"
-
+        
         # extract port info
         port_info="$(echo "$line" | awk 'BEGIN{FS="/"} {for(i=2;i<=NF;i++){ if(NF!=i){printf("%s, ", $i)}else{printf("%s\n", $i)}}}')"
-
+        
         # output formatted port information
-        printf "\t%-6d%s\n" "$port_num" "$port_info"
+        printf "\t%-6d%s\n" "$port_num" "$port_info" 
     done
 }
 
