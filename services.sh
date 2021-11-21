@@ -20,7 +20,9 @@ fi
 # awk:  discard the first three fields, which are the port number, port state, and protocol
 # sed:  discard lines that end with a question mark (e.g., "ftp?", "login?", "sql|imaps?")
 # sed:  get rid of leading whitespace
+# sed:  merge consecutive spaces into a single space
 # uniq: get a unique list of all services
+# sort: sort services alphabetically
 
 cat "$infile" \
 | sed -n '/^\t/p' \
@@ -29,4 +31,6 @@ cat "$infile" \
 | awk 'BEGIN{FS=","} {for(i=3;i<=NF;i++){printf("%s ",$i);if(i==NF){print("");}}}' \
 | sed '/.*?/d' \
 | sed -E 's/^\s+//g' \
-| uniq -u
+| sed -E 's/\s+/ /g' \
+| uniq -u \
+| sort
