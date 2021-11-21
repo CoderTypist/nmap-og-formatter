@@ -126,7 +126,7 @@ pprint_ports() {
     # format and print the info for each port
     # Why IFS?
     # Without IFS, lines are tokenized at whitespace
-    # bash removes the newline character, but we want to keep it for tokenizaiton purposes
+    # bash removes the newline character, but we want to keep it for tokenization purposes
     # we can keep by by adding the '$' 
      
     IFS=$'\n'
